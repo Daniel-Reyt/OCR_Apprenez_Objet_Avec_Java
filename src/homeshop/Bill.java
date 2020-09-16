@@ -1,10 +1,11 @@
 package homeshop;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Bill {
     private Customer customer;
-    private Map<Product, Integer> prducts;
+    private Map<Product, Integer> prducts = new HashMap<Product, Integer>();
 
     public Bill(Customer customer) {
         this.customer = customer;
