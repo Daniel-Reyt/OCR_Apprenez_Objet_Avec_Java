@@ -6,11 +6,12 @@ import java.util.Map;
 public class Bill {
     private Customer customer;
     private Map<Product, Integer> prducts = new HashMap<Product, Integer>();
+    private Delivery delivery;
 
-    public Bill(Customer customer) {
+    public Bill(Customer customer, Delivery delivery) {
         this.customer = customer;
+        this.delivery = delivery;
     }
-
     /**
      * Add a product with a quantity in the bill
      * @param product product to add
